@@ -7,6 +7,8 @@ Material design floating action button implemented as an Angularjs directive.
 Made to be fast and easy to customise. It works out of the box with no other dependency apart from Angular, but plays nicely with the [Angular Material](https://material.angularjs.org) bundle, for which it has dedicated templates.
 
 ##Demo##
+plnkr:http://plnkr.co/edit/Dinswg?p=preview
+
 Head over to the project [homepage](http://nobitagit.github.io/ng-material-floating-button/) to see it in action as a standalone component, check the [Angular Material integration](http://nobitagit.github.io/ng-material-floating-button/angular-material.html) or just take a look at this awesome gif:
 
 <img src="http://zippy.gfycat.com/LimitedTatteredFieldmouse.gif">
