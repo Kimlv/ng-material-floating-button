@@ -1,3 +1,4 @@
+//By Bhavin Patel
 +(function(window, angular, undefined){
 
   'use strict';
@@ -10,7 +11,7 @@
     '    data-mfb-toggle="{{togglingMethod}}" data-mfb-state="{{menuState}}">' +
     '  <li class="mfb-component__wrap">' +
     '    <a ng-click="clicked()" ng-mouseenter="hovered()" ng-mouseleave="hovered()"' +
-    '       ng-attr-data-mfb-label="{{label}}" class="mfb-component__button--main">' +
+    '       ng-attr-data-mfb-label="{{label}}" class="mfb-component__button--main" style="background-color:{{bgcolor}}">' +
     '     <i class="mfb-component__main-icon--resting {{resting}}"></i>' +
     '     <i class="mfb-component__main-icon--active {{active}}"></i>' +
     '    </a>' +
@@ -25,8 +26,8 @@
     '    data-mfb-toggle="{{togglingMethod}}" data-mfb-state="{{menuState}}">' +
     '  <li class="mfb-component__wrap">' +
     '    <a ng-click="clicked()" ng-mouseenter="hovered()" ng-mouseleave="hovered()"' +
-    '       style="background: transparent; box-shadow: none;"' +
-    '       ng-attr-data-mfb-label="{{label}}" class="mfb-component__button--main">' +
+    '       style="box-shadow: none; background-color:{{bgcolor}}"' +
+    '       ng-attr-data-mfb-label="{{label}}" class="mfb-component__button--main mfb-main-bg">' +
     '     <md-button class="md-fab md-primary" aria-label={{label}}>' +
     '       <md-icon style="position:initial;" md-svg-icon="{{resting}}"' +
     '         class="mfb-component__main-icon--resting"></md-icon>' +
@@ -42,7 +43,7 @@
 
     $templateCache.put('ng-mfb-button-default.tpl.html',
     '<li>' +
-    '  <a data-mfb-label="{{label}}" class="mfb-component__button--child">' +
+    '  <a data-mfb-label="{{label}}" class="mfb-component__button--child" style="background-color:{{bgcolor}}">' +
     '    <i class="mfb-component__child-icon {{icon}}">' +
     '    </i>' +
     '  </a>' +
@@ -52,9 +53,8 @@
     $templateCache.put('ng-mfb-button-md.tpl.html',
     '<li>' +
     '  <a href="" data-mfb-label="{{label}}" class="mfb-component__button--child" ' +
-    '     style="background: transparent; box-shadow: none;">' +
+    '     style="box-shadow: none; background-color:{{bgcolor}}">' +
     '     <md-button class="md-fab md-primary" aria-label={{label}}>' +
-    //'       <md-icon md-svg-src="img/icons/android.svg"></md-icon>' +
     '       <md-icon md-svg-icon="{{icon}}"></md-icon>' +
     '     </md-button>' +
     '  </a>' +
@@ -71,9 +71,9 @@
         position: '@',
         effect: '@',
         label: '@',
+        bgcolor: '@',
         resting: '@restingIcon',
         active: '@activeIcon',
-
         menuState: '=?',
         togglingMethod: '@',
       },
@@ -159,12 +159,15 @@
       replace: true,
       scope: {
         icon: '@',
-        label: '@'
+        label: '@',
+        bgcolor: '@'
       },
       templateUrl: function(elem, attrs) {
         return attrs.templateUrl || 'ng-mfb-button-default.tpl.html';
       }
     };
   }]);
+  
+  
 
 })(window, angular);
