@@ -60,7 +60,9 @@ This above code will output a basic button menu on the bottom right corner of th
      <button mfb-button bgcolor="<< ANY CSS Color Here >>" label="....." icon=".....> </button>
 ```
 **Small Child Buttons**
-- For having small child buttons, please add "mfb-smallchild.css" instead of regular "mfb.css".
+
+For having small child buttons, please add "mfb-smallchild.css" instead of regular "mfb.css".
+
 <img src="https://itsmebhavin.files.wordpress.com/2015/04/image_thumb1.png?w=146&h=244">
 
 ###Element attributes###
