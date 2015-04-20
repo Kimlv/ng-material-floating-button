@@ -53,6 +53,7 @@ Finally, place the correct html structure in your template. As a first example, 
 This example shows the two basic components of the directive, a unique `mfb-menu` element which serves as a wrapper to a variable number of child buttons, defined by the `mfb-button` attribute.
 This above code will output a basic button menu on the bottom right corner of the screen with a single menu item. Hardly amazing, so let's see how to customise it.
 ###Custom Color for each Button###
+<img src="https://itsmebhavin.files.wordpress.com/2015/04/image_thumb.png?w=157&h=244">
 ```html
      <button mfb-button bgcolor="<< ANY CSS Color Here >>" label="....." icon=".....> </button>
 ```
