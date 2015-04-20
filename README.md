@@ -44,14 +44,18 @@ var app = angular.module('your-app', ['ng-mfb']);
 Finally, place the correct html structure in your template. As a first example, assuming your example is using [Ionicons](http://ionicons.com/) as icon font:
 
 ```html
-<nav mfb-menu position="br" effect="zoomin" label="hover here"
+<nav mfb-menu position="br" effect="zoomin" label="hover here" bgcolor="#3F51B5"
      active-icon="ion-edit" resting-icon="ion-plus-round"
      toggling-method="click">
-  <button mfb-button icon="paper-airplane" label="menu item"></button>
+  <button mfb-button  bgcolor="#C62828" icon="paper-airplane" label="menu item"></button>
 </nav>
 ```
 This example shows the two basic components of the directive, a unique `mfb-menu` element which serves as a wrapper to a variable number of child buttons, defined by the `mfb-button` attribute.
 This above code will output a basic button menu on the bottom right corner of the screen with a single menu item. Hardly amazing, so let's see how to customise it.
+###Custom Color for each Button###
+```html
+     <button mfb-button bgcolor="<< ANY CSS Color Here >>" label="....." icon=".....> </button>
+```
 
 ###Element attributes###
 A number of attributes can be passed to the elements from the template in order to customise both behavior and appearance.
