@@ -8,7 +8,7 @@ Made to be fast and easy to customise. It works out of the box with no other dep
 
 ##Demo##
 - plnkr:http://plnkr.co/edit/Dinswg?p=preview (using ionicons)
-- plnkr:http://plnkr.co/edit/Jnq4DewUl2gaysJFOya3?p=preview  (using font-awesome)
+- plnkr:http://plnkr.co/edit/rCpPfK?p=preview  (using font-awesome)
 
 Head over to the project [homepage](http://nobitagit.github.io/ng-material-floating-button/) to see it in action as a standalone component, check the [Angular Material integration](http://nobitagit.github.io/ng-material-floating-button/angular-material.html) or just take a look at this awesome gif:
 
